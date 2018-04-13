@@ -38,27 +38,27 @@
   GNU General Public License for more details.
 
  -----------------------------------------------------------------------------------------
-  DEUTSCHE SPRACHDATEI FÜR DAS HELLO WORLD MODUL
+  DEUTSCHE SPRACHDATEI Fï¿½R DAS HELLO WORLD MODUL
  -----------------------------------------------------------------------------------------
 **/
 
-// sprachabhängige Modulbeschreibungen wurden mit WB 2.7 eingeführt (default English in info.php)
+// sprachabhï¿½ngige Modulbeschreibungen wurden mit WB 2.7 eingefuehrt (default English in info.php)
 $module_description = 'Dieses Modul dient als Grundlagen f&uuml;r die Entwicklung eigener Module. Unterst&uuml;tzt Mehrsprachigkeit. Ab WB 2.7 k&ouml;nnen die optionalen CSS Moduldateien frontend.css und backend.css vom WB-Backend aus bearbeitet werden.';
 
-// Array für alle sprachabhängigen Textausgaben im Front- und Backend
-// Hinweis: Verwende nachfolgende Namenskonvention für die Sprachausgabe des Moduls: $MOD_MODULE_DIRECTORY
+// Array fï¿½r alle sprachabhï¿½ngigen Textausgaben im Front- und Backend
+// Hinweis: Verwende nachfolgende Namenskonvention fï¿½r die Sprachausgabe des Moduls: $MOD_MODULE_DIRECTORY
 $MOD_HELLOWORLD = array(
-	// Variablen für Textausgaben im Frontend (view.php)
-	'TXT_HEADING_F'		=> 'Das Modul Hello World in Aktion',		// Überschrift Frontend
+	// Variablen fï¿½r Textausgaben im Frontend (view.php)
+	'TXT_HEADING_F'		=> 'Das Modul Hello World in Aktion',		// Ueberschrift Frontend
 	'TXT_DESC_F'			=> 'Text aus der Moduldatenbank',				// Beschreibung des Ausgabetextes
 	'TXT_ERROR_F'			=> 'Uups, keine Daten vorhanden.',			// Text wenn keine Daten in Datenbank vorhanden
-	'TXT_LINK_F'			=> 'Klick mich...',											// Beschriftung für Javascript ahref Beschreibung
-	'TXT_MODIFIED_F'	=> 'ge&auml;ndert am:',									// Text für Änderungsdatum
+	'TXT_LINK_F'			=> 'Klick mich...',											// Beschriftung fuer Javascript a-href Beschreibung
+	'TXT_MODIFIED_F'	=> 'ge&auml;ndert am:',									// Text fuer Aenderungsdatum
 	'DATE_FORMAT_F'		=> 'd.m.y, H:i:s',											// Deutsches Datums- und Zeitformat (23.04.07, 23:02:32)
-	// Variablen für Textausgaben im Backend (modify.php)
-	'TXT_HEADING_B'		=> 'Hello World Einstellungen',					// Überschrift Backend
+	// Variablen fï¿½r Textausgaben im Backend (modify.php)
+	'TXT_HEADING_B'		=> 'Hello World Einstellungen',					// Ueberschrift Backend
 	'TXT_INPUT_DESC_B'=> 'Anzeigetext im Frontend',						// Beschreibung der Eingabedaten
-	'TXT_LINK_B'			=> 'wer bin ich...'											// Javascript ahref link text
+	'TXT_LINK_B'			=> 'wer bin ich...'											// Javascript a-href link text
 );
 
 ?>

@@ -22,7 +22,7 @@
 #
 #		PLEASE NOTE: 
 #		Module tables have to stick to the following naming convention: TABLE_PREFIX_mod_MODULE_DIRECTORY 
-#		Don´t use $module_directory! Use the string defined via $module_directory in info.php instead (here: helloworld)
+#		Donï¿½t use $module_directory! Use the string defined via $module_directory in info.php instead (here: helloworld)
 #
 ######################################################################################################################
 
@@ -38,7 +38,7 @@
   This module is distributed in the hope that it will be useful, 
   but WITHOUT ANY WARRANTY; without even the implied warranty of 
   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the 
-  GNU General Public License for more details.
+  GNU General Public License for more details
 **/
 
 // prevent this file from being accessed directly

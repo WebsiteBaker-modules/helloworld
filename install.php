@@ -10,7 +10,7 @@
 #	Website Baker checks if a previous installation of that module exists. Only if no previous installation exist,
 #	the install.php file is executed. Otherwise the upgrade.php file is called. Make sure that the $module_version
 #	variable of the new module is set correct. The install.php file is automatically invoked by Website Baker, 
-#	if you install this module via the Website Baker Backend: Add-Ons -> Modules -> Install Module
+#	if you install this module via the Website Baker Backend: Add-Ons -> Modules -> Install Module.
 #
 #	LIST OF VARIABLES AND FUNCTIONS USED IN THIS FILE:
 #		CONSTANTS AND VARIABLES USED:
@@ -26,7 +26,7 @@
 #
 #		PLEASE NOTE: 
 #		Module tables have to stick to the following naming convention: TABLE_PREFIX_mod_MODULE_DIRECTORY 
-#		Don´t use $module_directory! Use the string defined via $module_directory in info.php instead (here: helloworld)
+#		Donï¿½t use $module_directory! Use the string defined via $module_directory in info.php instead (here: helloworld)
 #
 #	ADD SEARCH FUNCTIONALITY TO YOUR MODULES:
 #	If you want that users can search for information stored in your module DB-tables, you need to add the four rows to
@@ -38,7 +38,7 @@
 #		Row 3: 	("query_body", 	$search_info, 		"helloworld" 
 #		Row 4: 	("query_end", 		$search_info, 		"helloworld" 
 #
-#	Don´t care if the lines makes no sense to you. Just follow the instructions shown in lines 77-82 :-)
+#	Donï¿½t care if the lines makes no sense to you. Just follow the instructions shown in lines 77-82 :-)
 #
 ######################################################################################################################
 
@@ -111,4 +111,3 @@ $database->query("INSERT INTO `".TABLE_PREFIX."search` (`name`,`value`,`extra`)
 // insert blank row to the module table (there needs to be at least on row for the search to work)
 $database->query("INSERT INTO `".TABLE_PREFIX."mod_helloworld` (`page_id`,`section_id`) VALUES ('0','0')");
 
-?>

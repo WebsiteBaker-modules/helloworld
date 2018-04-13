@@ -5,7 +5,7 @@
 #	PURPOSE OF THIS FILE:
 #	This file provides clean-up functions. All database tables which are added by the module should be deleted if 
 #	the module is uninstalled. This is a measure for a tidy database and good working praxis. All files contained in
-#	the module directory will automatically be deleted by Website Baker itself, you do not need to care about that.
+#	the module directory will automatically be deleted by Website Baker itself, you do not need to care about that
 #
 #	INVOKED BY:
 #	This file is automatically invoked by Website Baker, if you uninstall this module via the Website Baker Backend
@@ -22,7 +22,7 @@
 #
 #		PLEASE NOTE: 
 #		Module tables have to stick to the following naming convention: TABLE_PREFIX_mod_MODULE_DIRECTORY 
-#		Don´t use $module_directory! Use the string defined via $module_directory in info.php instead (here: helloworld)
+#		Donï¿½t use $module_directory! Use the string defined via $module_directory in info.php instead (here: helloworld)
 #
 ######################################################################################################################
 
@@ -51,4 +51,3 @@ $database->query("DELETE FROM `" .TABLE_PREFIX ."search` WHERE `extra` = 'hellow
 // delete the module database table
 $database->query("DROP TABLE `" .TABLE_PREFIX ."mod_helloworld`");
 
-?>

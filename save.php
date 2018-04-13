@@ -25,7 +25,7 @@
 #		$update_when_modified:	tells the admin script to add the update information
 #
 #		VARIABLES DEFINED IN LANGUAGE FILES:
-#		$MESSAGE['PAGES']['SAVED']:	status messsage (defined in /languages/XX.php)
+#		$MESSAGE['PAGES_SAVED']:	status messsage (defined in /languages/XX.php)
 #
 #		FUNCTIONS USED:
 #		$database->query():			function to create a database query
@@ -36,7 +36,7 @@
 #
 #		PLEASE NOTE: 
 #		Module tables have to stick to the following naming convention: TABLE_PREFIX_mod_MODULE_DIRECTORY 
-#		Don´t use $module_directory! Use the string defined via $module_directory in info.php instead (here: helloworld)
+#		Donï¿½t use $module_directory! Use the string defined via $module_directory in info.php instead (here: helloworld)
 #
 ######################################################################################################################
 
@@ -62,7 +62,7 @@ require('../../config.php');
 *	INCLUDE THE WB-ADMIN WRAPPER SCRIPT 
 *	The admin wrapper script provides functions to add the look & feel of WB-Backend pages
 *	to the save.php file (backend header, last modified, backend footer...).
-*	The admin wrapper also takes care about the users permissions to view and change the files.
+*	The admin wrapper also takes care about the users permissions to view and change the files
 */
 // tell the admin wrapper to actualize the DB settings when this page was last updated
 $update_when_modified = true;
@@ -108,10 +108,9 @@ $database->query($sql_query);
 if($database->is_error()) {
 	$admin->print_error($database->get_error(), $js_back);
 } else {
-	$admin->print_success($MESSAGE['PAGES']['SAVED'], ADMIN_URL.'/pages/modify.php?page_id='.$page_id);
+	$admin->print_success($MESSAGE['PAGES_SAVED'], ADMIN_URL.'/pages/modify.php?page_id='.$page_id);
 }
 
 // print admin footer
-$admin->print_footer()
+$admin->print_footer();
 
-?>

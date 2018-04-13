@@ -37,7 +37,7 @@
 #
 #		PLEASE NOTE: 
 #		Module tables have to stick to the following naming convention: TABLE_PREFIX_mod_MODULE_DIRECTORY 
-#		Don´t use $module_directory! Use the string defined via $module_directory in info.php instead (here: helloworld)
+#		Donï¿½t use $module_directory! Use the string defined via $module_directory in info.php instead (here: helloworld)
 #
 ######################################################################################################################
 
@@ -74,17 +74,6 @@ if(!file_exists(WB_PATH .'/modules/helloworld/languages/' .LANGUAGE .'.php')) {
 } else {
 	// a module language file exists for the language defined by the user, load it
 		require_once(WB_PATH .'/modules/helloworld/languages/' .LANGUAGE .'.php');
-}
-
-/**
-*	INLCUDE BACKEND.CSS INTO THE HTML BODY OF THE PAGE IF WB < 2.6.6
-*	NOTE: THIS WAY MODULES BECOME DOWNWARD COMPATIBLE WITH OLDER WB RELEASES
-*/
-// check if backend.css file needs to be included into the <body></body> of modify.php
-if(!method_exists($admin, 'register_backend_modfiles') && file_exists(WB_PATH .'/modules/helloworld/backend.css')) {
-	echo '<style type="text/css">';
-	include(WB_PATH .'/modules/helloworld/backend.css');
-	echo "\n</style>\n";
 }
 
 /**

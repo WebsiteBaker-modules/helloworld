@@ -48,11 +48,11 @@
 */
 
 .mod_helloworld_emphasise_f {
-  font-weight: bold;
-  color: brown;
+    font-weight: bold;
+    color: brown;
 }
 
 .mod_helloworld_warning_f {
-  font-weight: bold;
-  color: red;
+    font-weight: bold;
+    color: red;
 }

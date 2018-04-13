@@ -34,7 +34,7 @@
 #
 #		PLEASE NOTE: 
 #		Module tables have to stick to the following naming convention: TABLE_PREFIX_mod_MODULE_DIRECTORY 
-#		Don´t use $module_directory! Use the string defined via $module_directory in info.php instead (here: helloworld)
+#		Dont use $module_directory! Use the string defined via $module_directory in info.php instead (here: helloworld)
 #
 ######################################################################################################################
 
@@ -70,18 +70,6 @@ if(!file_exists(WB_PATH .'/modules/helloworld/languages/' .LANGUAGE .'.php')) {
 		require_once(WB_PATH .'/modules/helloworld/languages/' .LANGUAGE .'.php');
 }
 
-/**
-*	INLCUDE FRONTEND.CSS INTO THE HTML BODY OF THE PAGE IF WB < 2.6.7 OR REGISTER_MODFILES FUNCTION
-* IN THE INDEX.PHP OF YOUR TEMPLATE IS NOT USED
-*	NOTE: THIS WAY MODULES BECOME DOWNWARD COMPATIBLE WITH OLDER WB RELEASES
-*/
-// check if frontend.css file needs to be included into the <body></body> of view.php
-if((!function_exists('register_frontend_modfiles') || !defined('MOD_FRONTEND_CSS_REGISTERED')) && 
-	file_exists(WB_PATH .'/modules/helloworld/frontend.css')) {
-	echo '<style type="text/css">';
-  include(WB_PATH .'/modules/helloworld/frontend.css');
-  echo "\n</style>\n";
-} 
 
 /**
 *	THE FUNCTIONS AND SETTINGS OF YOUR MODULE IN THE WB FRONTED ARE DEFINED BELOW THIS LINE HERE
@@ -147,4 +135,3 @@ if($simple_output != '') {
 // use a Javascript function defined in the frontend.js (loaded to the <head> if this option is activate in the template)
 echo '<p><a href="#" onClick="mod_helloworld_show_message_f(\'' .htmlspecialchars($simple_output) .'\')">' .$MOD_HELLOWORLD['TXT_LINK_F'] .'</a></p>';
 
-?>

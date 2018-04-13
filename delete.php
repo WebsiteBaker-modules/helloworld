@@ -3,7 +3,7 @@
 ######################################################################################################################
 #
 #	PURPOSE OF THIS FILE:
-#	Delete the entry of the module DB-table of the page which will be deleted (filer: unique section_id)
+#	Delete the entry of the module DB-table of the page which will be deleted (filer: unique section_id).
 #
 #	INVOKED BY:
 #	This file is automatically invoked by Website Baker, if you delete a page or section of your module type
@@ -21,7 +21,7 @@
 #
 #		PLEASE NOTE: 
 #		Module tables have to stick to the following naming convention: TABLE_PREFIX_mod_MODULE_DIRECTORY 
-#		Don´t use $module_directory! Use the string defined via $module_directory in info.php instead (here: helloworld)
+#		Donï¿½t use $module_directory! Use the string defined via $module_directory in info.php instead (here: helloworld)
 #
 ######################################################################################################################
 
